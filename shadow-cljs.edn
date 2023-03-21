@@ -1,0 +1,13 @@
+{:source-paths
+ ["src/dev"
+ "src/main"
+ "src/test"]
+
+ :dependencies
+ []
+
+ :builds
+ {:backend
+  {:target :node-script
+   :main main/init
+   :output-to "out/demo-script/script.js"}}}
