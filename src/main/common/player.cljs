@@ -2,7 +2,9 @@
   (:require
    [clojure.string :as string]
    [common.deck :as deck]
-   [common.utils :as utils]))
+   [common.utils :as utils]
+   [common.player :as player]
+   [common.card :as card]))
 
 (defn make [login]
   {:id login
@@ -25,23 +27,42 @@
 (defn player-has-card? [card player]
   (some #(= card %) (:cards player)))
 
+(defn player-has-cards? [player]
+  (not (empty? (:cards player))))
+
 ; list
 
-(defn get-next-player-id [id players]
-  (id))
+(defn get-next-player [player players]
+  (let [playing (filter player-has-cards? players)
+        current-index (utils/find-item-index #(equals? player %) playing)
+        next-index (inc current-index)]
+    (nth playing
+         (if (>= next-index (count playing))
+           0
+           next-index))))
 
-(defn find-first-attacker-id [trump players] nil)
+(defn find-first-attacker [trump players]
+  (reduce
+   (fn [prev-player next-player]
+     (let [prev-smallest-card (deck/get-smallest-valuable-card trump (:cards prev-player))
+           next-smallest-card (deck/get-smallest-valuable-card trump (:cards next-player))
+           smallest-card (card/get-smallest trump prev-smallest-card next-smallest-card)]
+       (if (= smallest-card next-smallest-card)
+         next-player
+         prev-player)))
+   (first players)
+   players))
 
 (defn deal-to-player [player deck]
   (let [amount (max 0 (- 6 (count (:cards player))))
         [cards next-deck] (deck/deal-cards amount deck)]
-    [(assoc player :deck cards) next-deck]))
+    [(assoc player :cards cards) next-deck]))
 
 (defn deal-deck-to-players [players deck]
   (reduce
    (fn [[acc-players acc-deck] player]
      (let [[next-players next-deck] (deal-to-player player acc-deck)]
-       [(concat acc-players next-players) next-deck]))
+       [(concat acc-players [next-players]) next-deck]))
    [[] deck]
    players))
 
@@ -56,4 +77,6 @@
     (fn [player] (not (empty? (:cards player))))
     players)))
 
-(defn get-by-id [list id] nil)
+(defn get-by-id [list id]
+; TODO
+  nil)
