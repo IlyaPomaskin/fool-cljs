@@ -1,7 +1,7 @@
 (ns common.deck
   (:require
-   [card :as card]
-   [consts :refer [ranks suits]]))
+   [common.card :as card]
+   [common.consts :refer [ranks suits]]))
 
 (defn make []
   (shuffle
