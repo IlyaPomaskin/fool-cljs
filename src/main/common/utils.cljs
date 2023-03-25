@@ -14,6 +14,6 @@
 (defn find-item-index [pred coll]
   (nth
    (find-item
-    pred
+    (fn [[_index item]] (pred item))
     (map-indexed (fn [index item] [index item]) coll))
    0))

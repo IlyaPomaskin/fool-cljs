@@ -1,7 +1,7 @@
-(ns common.card 
+(ns common.card
   (:require
-   [consts :refer [ranks]]
-   [utils :refer [find-item-index]]))
+   [common.consts :refer [ranks]]
+   [common.utils :refer [find-item-index]]))
 
 (defn hidden? [card]
   (= (:hidden card) true))
@@ -25,13 +25,12 @@
 
 (defn get-rank-index [card]
   (find-item-index
-   (fn [[_ item]] (= item (:rank card)))
+   (fn [rank] (= rank (:rank card)))
    ranks))
-
-(get-rank-index {:rank :jack})
 
 (defn lt-by-rank [a b]
   (< (get-rank-index a) (get-rank-index b)))
+
 
 (defn gt-by-rank [a b]
   (not (lt-by-rank a b)))
