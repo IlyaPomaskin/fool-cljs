@@ -4,17 +4,21 @@
   "src/test"]
 
  :dependencies
- [[reagent "1.1.1"]
-  [lilactown/helix "0.0.9"]]
+ [[binaryage/devtools "1.0.2"]
+  [com.pitch/uix.core "0.8.1"]
+  [com.pitch/uix.dom "0.8.1"]]
+
+ :dev-http {3000 "public"}
 
  :builds
- {:backend {:target :node-script
-            :main main/init
-            :output-to "out/demo-script/script.js"}
+ {:backend
+  {:target :node-script
+   :main main/init
+   :output-to "out/demo-script/script.js"}
 
-  :dev {:target :browser,
-        ;TODO
-        ;:init-fn myapp.main/init,
-        :output-dir "out/browser/target",
-        :devtools {:preloads [helix.experimental.refresh]
-                   :reload-strategy :full}}}}
+  :frontend
+  {:target :browser
+   :modules {:main {:init-fn frontend.main/init}}
+   :output-dir "public/js"
+   :devtools {:preloads [frontend.dev devtools.preload]
+              :reload-strategy :full}}}}

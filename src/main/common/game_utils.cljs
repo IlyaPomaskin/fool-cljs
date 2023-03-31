@@ -1,4 +1,4 @@
-(ns common.game_utils
+(ns common.game-utils
   (:require
    [common.player :as player]
    [common.table :as table]))
@@ -27,8 +27,6 @@
    (empty? (:deck game))
    (empty? (:cards player))))
 
-(defn players-has-cards? [players])
-
 (defn player-lose? [player game]
   (and
    (= (player/players-with-cards-count (:players game)) 1)
@@ -46,9 +44,12 @@
    (not (defender? player game))))
 
 (defn passed? [player game]
-  (if (empty? (:cards player))
-    true
-    (some #(= (:id player) %) (:pass game))))
+  (or
+   (empty? (:cards player))
+   (some #(= (:id player) %) (:pass game))))
 
 (defn all-passed? [game]
-  false)
+  (->>
+   (:players game)
+   (remove #(defender? % game))
+   (every? #(passed? % game))))
