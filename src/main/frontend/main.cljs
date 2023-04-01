@@ -35,15 +35,33 @@
              ($ card-ui/visible {:card by}))))
       table)))
 
-(defui stack [{:keys [deck]}]
-  (let []
-    ($ :div)))
+(defui stack [{:keys [deck trump]}]
+  (let [length (dec (count deck))
+        has-cards? (> length 0)
+        last-card (last deck)]
+    ($ :div.relative
+       (if (or has-cards? last-card)
+         ($ card-ui/slot {:class "relative z-10"})
+         ($ card-ui/trump {:trump trump}))
+
+       (when has-cards?
+         ($ card-ui/stack
+            {:class "absolute top-0 z-10"
+             :amount length}))
+
+       (when last-card
+         ($ card-ui/visible
+            {:class "absolute top-0 rotate-90 left-8"
+             :card last-card})))))
 
 (defui game [{:keys [game]}]
   ($ :.flex.flex-col.gap-8
      (map
       #($ player {:key (:id %) :player %})
       (:players game))
+     ($ ui/panel
+        ($ ui/title "Deck")
+        ($ stack {:deck [] :trump :spades}))
      ($ table
         {:table [{:to {:rank :six :suit :spades} :by nil}]})))
 
