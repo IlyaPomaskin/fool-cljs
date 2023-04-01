@@ -10,7 +10,6 @@
 (defui player [{:keys [player]}]
   (let [[selected set-selected!] (uix.core/use-state nil)]
     ($ ui/panel
-       {:class :.bg-slate-100}
        ($ ui/title (:id player))
        ($ :.flex.flex-row.flex-wrap.gap-2
           (map
@@ -22,24 +21,30 @@
                  :selected (c/equals? card selected)}))
            (:cards player))))))
 
-(defui table [{:keys [table]}]
+(defui table [{:keys [class table]}]
   ($ ui/panel
-     {:class :.bg-slate-100}
+     {:class [class]}
      ($ ui/title "Table")
-     (map
-      (fn [{:keys [to by]}]
-        ($ :.flex.flex-col.gap-2 {:key (card-ui/to-string to)}
-           ($ card-ui/visible {:card to})
-           (if (nil? by)
-             ($ card-ui/slot)
-             ($ card-ui/visible {:card by}))))
-      table)))
+
+     ($ :.flex.gap-2
+        (when (empty? table)
+          ($ :.flex.flex-col.gap-2
+             ($ card-ui/slot)))
+
+        (map
+         (fn [{:keys [to by]}]
+           ($ :.flex.flex-col.gap-2 {:key (card-ui/to-string to)}
+              ($ card-ui/visible {:card to})
+              (if (nil? by)
+                ($ card-ui/slot)
+                ($ card-ui/visible {:card by}))))
+         table))))
 
 (defui stack [{:keys [deck trump]}]
   (let [length (dec (count deck))
         has-cards? (> length 0)
         last-card (last deck)]
-    ($ :div.relative
+    ($ :.relative.w-24
        (if (or has-cards? last-card)
          ($ card-ui/slot {:class "relative z-10"})
          ($ card-ui/trump {:trump trump}))
@@ -57,13 +62,17 @@
 (defui game [{:keys [game]}]
   ($ :.flex.flex-col.gap-8
      (map
-      #($ player {:key (:id %) :player %})
+      (fn [item] ($ player {:key (:id item) :player item}))
       (:players game))
-     ($ ui/panel
-        ($ ui/title "Deck")
-        ($ stack {:deck [] :trump :spades}))
-     ($ table
-        {:table [{:to {:rank :six :suit :spades} :by nil}]})))
+
+     ($ :.flex.gap-8
+        ($ ui/panel
+           ($ ui/title "Deck")
+           ($ stack game))
+
+        ($ table
+           {:class "flex-1"
+            :table (:table game)}))))
 
 (defui app []
   (let [[state set-value!] (uix.core/use-state (g/make-in-progress ["qwe" "ads" "zxc"]))]

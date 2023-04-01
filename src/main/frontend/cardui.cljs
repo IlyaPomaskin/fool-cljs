@@ -34,8 +34,8 @@
     (case (:suit card)
       :spades "text-slate-500"
       :clubs "text-slate-500"
-      :hearts "text-red-400"
-      :diamonds "text-red-400")))
+      :hearts "text-red-600"
+      :diamonds "text-red-600")))
 
 (defn to-string [card]
   (string/join [(suit-to-string card) (rank-to-string card)]))
@@ -55,9 +55,9 @@
 
 (defui visible [{:keys [class card on-click selected]}]
   ($ base
-     {:class ["transition duration-300 shadow-md"
+     {:class ["transition duration-300 shadow-md font-medium"
               (color card)
-              (when selected "bg-slate-200 shadow-xl")
+              (when selected "bg-slate-300 shadow-xl")
               class]
       :on-click on-click}
      ($ :.flex.flex-col.gap-0.5.p-1.w-6
@@ -75,10 +75,10 @@
      "Empty"))
 
 (defui trump [{:keys [trump]}]
-  ($ base {:class flex-center} (suit-to-string {:suit trump})))
+  ($ base {:class [flex-center "shadow-md"]} (suit-to-string {:suit trump})))
 
 (defui stack [{:keys [amount class]}]
   ($ base
-     {:class ["text-center" flex-center class]}
+     {:class ["text-center shadow-md" flex-center class]}
      amount))
 

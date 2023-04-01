@@ -16,7 +16,7 @@
    :main main/init
    :output-to "out/demo-script/script.js"}
 
-  :frontend
+  :app
   {:target :browser
    :modules {:main {:init-fn frontend.main/init}}
    :output-dir "public/js"
