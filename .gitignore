@@ -22,3 +22,6 @@ pom.xml.asc
 .clj-kondo
 .lsp
 out
+
+fool.sublime-workspace
+public/style.css

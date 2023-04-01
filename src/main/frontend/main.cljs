@@ -2,19 +2,16 @@
   (:require
    [common.card :as c]
    [common.game :as g]
-   [frontend.card-ui :as card-ui]
+   [frontend.cardui :as card-ui]
+   [frontend.ui :as ui]
    [uix.core :refer [$ defui]]
    [uix.dom]))
 
-
-(defui panel [{:keys [class children]}]
-  ($ :.rounded-md.shadow-lg.p-2 {:class class} children))
-
 (defui player [{:keys [player]}]
   (let [[selected set-selected!] (uix.core/use-state nil)]
-    ($ panel
+    ($ ui/panel
        {:class :.bg-slate-100}
-       ($ :.text-xl.pb-4 (:id player))
+       ($ ui/title (:id player))
        ($ :.flex.flex-row.flex-wrap.gap-2
           (map
            (fn [card]
@@ -26,9 +23,9 @@
            (:cards player))))))
 
 (defui table [{:keys [table]}]
-  ($ panel
+  ($ ui/panel
      {:class :.bg-slate-100}
-     ($ :.text-xl.pb-4 "Table")
+     ($ ui/title "Table")
      (map
       (fn [{:keys [to by]}]
         ($ :.flex.flex-col.gap-2 {:key (card-ui/to-string to)}
@@ -37,6 +34,10 @@
              ($ card-ui/slot)
              ($ card-ui/visible {:card by}))))
       table)))
+
+(defui stack [{:keys [deck]}]
+  (let []
+    ($ :div)))
 
 (defui game [{:keys [game]}]
   ($ :.flex.flex-col.gap-8
@@ -53,7 +54,7 @@
           ($ game {:game state})))))
 
 (defonce root
-  (uix.dom/create-root js/document.body))
+  (uix.dom/create-root (js/document.getElementById "root")))
 
 (defn init []
   (uix.dom/render-root ($ app) root))

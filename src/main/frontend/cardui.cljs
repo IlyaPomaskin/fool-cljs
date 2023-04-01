@@ -1,6 +1,7 @@
-(ns frontend.card-ui
+(ns frontend.cardui
   (:require
    [clojure.string :as string]
+   [frontend.ui :refer [flex-center]]
    [uix.core :refer [$ defui]]
    [uix.dom]))
 
@@ -31,10 +32,10 @@
   (if (nil? card)
     "unknown"
     (case (:suit card)
-      :spades "text-slate-600"
-      :clubs "text-slate-600"
-      :hearts "text-fuchsia-600"
-      :diamonds "text-fuchsia-600")))
+      :spades "text-slate-500"
+      :clubs "text-slate-500"
+      :hearts "text-red-400"
+      :diamonds "text-red-400")))
 
 (defn to-string [card]
   (string/join [(suit card) (rank card)]))
@@ -53,7 +54,9 @@
 
 (defui visible [{:keys [card on-click selected]}]
   ($ base
-     {:class [(color card) "shadow-md" (when selected "bg-slate-300")]
+     {:class ["transition duration-300 shadow-md"
+              (color card)
+              (when selected "bg-slate-200 shadow-xl")]
       :on-click on-click}
      ($ :.flex.flex-col.gap-0.5.absolute.top-1.left-1
         ($ :.text-center (suit card))
@@ -66,5 +69,9 @@
 
 (defui slot []
   ($ base
-     {:class ["text-slate-300 text-xs pt-4 text-center"]}
+     {:class ["text-slate-300 text-xs text-center" flex-center]}
      "Empty"))
+
+(defui trump [{:keys [card]}]
+  ($ base {:class flex-center} (suit card)))
+

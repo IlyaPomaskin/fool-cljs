@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"ey",
+				":keys"
+			],
+			[
+				"selec",
+				":selected"
+			],
+			[
+				"card-",
+				"card-to-string"
+			],
+			[
+				"ass",
+				"assoc"
+			],
+			[
+				"player",
+				"player"
+			],
+			[
+				"top",
+				"to-pink-200"
+			],
+			[
+				"bg",
+				"bg-gradient-to-tl"
+			],
+			[
 				"group",
 				"groupped"
 			],
@@ -38,10 +66,6 @@
 			[
 				"try",
 				"tryCatch"
-			],
-			[
-				"selec",
-				"selectedCategoriesIds"
 			],
 			[
 				"mn",
@@ -144,10 +168,6 @@
 				"rand-int"
 			],
 			[
-				"ass",
-				"assoc!"
-			],
-			[
 				"asso",
 				"assoc-in"
 			],
@@ -230,10 +250,6 @@
 			[
 				"fin",
 				".findIndex"
-			],
-			[
-				"top",
-				"top-start"
 			],
 			[
 				"onS",
@@ -498,67 +514,11 @@
 			[
 				"postin",
 				"postingForLink"
-			],
-			[
-				"Ench",
-				"EnrichedLink"
-			],
-			[
-				"fetchLi",
-				"fetchLinkByUrl"
-			],
-			[
-				"padd",
-				"padding-bottom"
-			],
-			[
-				"post",
-				"postingForLink"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": ".sublime-project",
-			"settings":
-			{
-				"buffer_size": 207,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					16,
-					1,
-					"insert",
-					{
-						"characters": "asdf"
-					},
-					"BQAAADIAAAAAAAAAMwAAAAAAAAAAAAAAMwAAAAAAAAAzAAAAAAAAAAMAAABzcmMzAAAAAAAAADQAAAAAAAAAAAAAADQAAAAAAAAANQAAAAAAAAAAAAAANQAAAAAAAAA2AAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAyAAAAAAAAADUAAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					43,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AQAAAM8AAAAAAAAA0AAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAzwAAAAAAAADPAAAAAAAAAP///////+9/"
-				],
-				[
-					50,
-					1,
-					"left_delete",
-					null,
-					"AQAAAM8AAAAAAAAAzwAAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAA0AAAAAAAAADQAAAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -572,16 +532,28 @@
 		"selected_items":
 		[
 			[
+				"unf",
+				"Code Folding: Unfold All"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"form",
+				"LSP: Format File"
+			],
+			[
+				"shado",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
 				"project",
 				"Project: Save As"
 			],
 			[
 				"proje",
 				"Project: Add Folder"
-			],
-			[
-				"form",
-				"Prettier: Format"
 			],
 			[
 				"for",
@@ -772,20 +744,12 @@
 				"File: Save All"
 			],
 			[
-				"unf",
-				"Code Folding: Unfold All"
-			],
-			[
 				"upper",
 				"Convert Case: Upper Case"
 			],
 			[
 				"close a",
 				"File: Close All"
-			],
-			[
-				"low",
-				"Convert Case: Lower Case"
 			],
 			[
 				"ke",
@@ -1028,18 +992,36 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ipomaskin/work/fool-cljs"
+		"/Users/ipomaskin/work/fool-cljs",
+		"/Users/ipomaskin/work/fool-cljs/src",
+		"/Users/ipomaskin/work/fool-cljs/src/main",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend"
 	],
 	"file_history":
 	[
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/card_ui.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/ui.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/main.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/card-ui.cljs",
+		"/Users/ipomaskin/work/fool-cljs/tailwind.config.js",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/styles/tailwind.css",
+		"/Users/ipomaskin/work/fool-cljs/fool.sublime-project",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/consts.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/deck.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/card.cljs",
+		"/Users/ipomaskin/work/fool-cljs/postcss.config.js",
+		"/Users/ipomaskin/work/fool-cljs/shadow-cljs.edn",
+		"/Users/ipomaskin/work/fool-cljs/public/style.css",
+		"/Users/ipomaskin/work/fool-cljs/public/index.html",
+		"/Users/ipomaskin/work/fool-cljs/postcss.config.json",
+		"/Users/ipomaskin/work/fool-cljs/package.json",
+		"/Users/ipomaskin/work/fool-cljs/.sublime-project",
 		"/Users/ipomaskin/work/fool-cljs/fool-cljs.sublime-project",
 		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/fool-cljs.sublime-workspaces.json",
 		"/Users/ipomaskin/work/opinions/untitled.json",
 		"/Users/ipomaskin/work/fool-cljs/.clj-kondo/config.edn",
 		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/dev.cljs",
-		"/Users/ipomaskin/work/fool-cljs/shadow-cljs.edn",
-		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/main.cljs",
-		"/Users/ipomaskin/work/fool-cljs/public/index.html",
 		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/lib.clj",
 		"/Users/ipomaskin/work/fool-cljs/out/frontend/target/main.js",
 		"/Users/ipomaskin/work/fheroes2/android/app/src/main/java/org/fheroes2/MainActivity.java",
@@ -1118,11 +1100,7 @@
 		"/Users/ipomaskin/work/opinions/src/components/OpinionRelated/components/Opinion/Opinion.tsx",
 		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/Mutuals/useMutualsRequest.ts",
 		"/Users/ipomaskin/work/opinions/src/utils/queries/fetchActionsMutuals.ts",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/game.cljs",
 		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/lib.cljs",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/deck.cljs",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/consts.cljs",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/card.cljs",
 		"/Users/ipomaskin/work/opinions/src/components/LinkPreview/components/Image/Image.tsx",
 		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/components/Related/components/Collapsed/Collapsed.tsx",
 		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/components/Related/useRelatedPostsQuery.ts",
@@ -1148,28 +1126,18 @@
 		"/Users/ipomaskin/work/opinions/src/components/UserInfo/components/TwitterInfo/components/AccountItem/AccountItem.tsx",
 		"/Users/ipomaskin/work/opinions/src/components/UserInfo/components/TwitterInfo/components/Descriptions/Description.tsx",
 		"/Users/ipomaskin/work/opinions/src/components/UserInfo/components/TwitterInfo/components/FollowersCount/FollowersCount.tsx",
-		"/Users/ipomaskin/work/opinions/src/components/UserList/components/Item/Item.tsx",
-		"/Users/ipomaskin/work/opinions/src/pages/Permalink/components/Content/Content.tsx",
-		"/Users/ipomaskin/work/opinions/src/pages/Login/Login.module.css",
-		"/Users/ipomaskin/work/opinions/src/components/Skeleton.module.css",
-		"/Users/ipomaskin/work/opinions/src/styles.ts",
-		"/Users/ipomaskin/work/opinions/src/components/LinkPreview/components/Image/useLoadedImage.ts",
-		"/Users/ipomaskin/work/opinions/src/components/LinkPreview/components/Image/Image.module.css",
-		"/Users/ipomaskin/work/opinions/node_modules/react-loading-skeleton/dist/skeleton.css",
-		"/Users/ipomaskin/work/opinions/package.json",
-		"/Users/ipomaskin/work/opinions/node_modules/caniuse-lite/data/features/imagecapture.js",
-		"/Users/ipomaskin/work/opinions/build.zip",
-		"/Users/ipomaskin/work/opinions/src/components/PostingForm/PostingForm.tsx"
+		"/Users/ipomaskin/work/opinions/src/components/UserList/components/Item/Item.tsx"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 104.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -1177,6 +1145,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"panel",
+			"card-to-string",
+			"card-to",
+			"card-tostring",
+			"card-to-string",
+			"card-ui/card",
+			"card-",
+			"card-empty",
+			"visible-card",
+			"card-base",
+			" ",
+			".",
+			"shadow",
+			"red",
+			"500",
+			"dark",
+			"| ",
+			"`",
+			"| ",
+			"def",
+			" ",
+			",",
+			"\"",
+			" ",
+			","
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1198,58 +1191,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": ".sublime-project",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 207,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								207,
-								207
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html, text.xml"
-								},
-								{
-									"rhs_empty": true,
-									"selector": "punctuation.accessor"
-								},
-								{
-									"selector": "- comment - punctuation.separator - punctuation.definition.string.end - constant.character.escape - invalid.illegal - punctuation.section.mapping - punctuation.section.sequence",
-									"server": "LSP-json"
-								}
-							],
-							"git_gutter_is_enabled": true,
-							"lsp_active": true,
-							"lsp_hover_provider_count": 2,
-							"lsp_uri": "file:///Users/ipomaskin/work/fool-cljs/.sublime-project",
-							"show_definitions": false,
-							"syntax": "Packages/JSON/JSON.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1341,6 +1282,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"game",
+				"src/main/common/game.cljs"
+			],
+			[
+				"const",
+				"src/main/common/consts.cljs"
+			],
+			[
+				"subl",
+				"fool.sublime-project"
+			],
+			[
+				"deck",
+				"src/main/common/deck.cljs"
+			],
+			[
+				"card",
+				"src/main/common/card.cljs"
+			],
+			[
+				"tailw",
+				"tailwind.config.js"
+			],
+			[
+				"sub",
+				"fool.sublime-project"
+			],
+			[
+				"pack",
+				"package.json"
+			],
 			[
 				"hmtl",
 				"public/index.html"
@@ -1674,10 +1647,6 @@
 				"src/components/App/App.tsx"
 			],
 			[
-				"pack",
-				"package.json"
-			],
-			[
 				"image",
 				"node_modules/caniuse-lite/data/features/imagecapture.js"
 			],
@@ -1824,34 +1793,6 @@
 			[
 				"search peop",
 				"src/pages/Search/components/SearchOpinionsUsers/SearchOpinionsUsers.tsx"
-			],
-			[
-				"nav",
-				"src/components/App/Root/useNavigationStack.ts"
-			],
-			[
-				"git",
-				".gitignore"
-			],
-			[
-				".gi",
-				".gitignore"
-			],
-			[
-				"car",
-				"src/main/common/card.cljs"
-			],
-			[
-				"deck",
-				"src/main/deck.cljs"
-			],
-			[
-				"usenav",
-				"src/components/App/Root/useNavigationStack.ts"
-			],
-			[
-				"twi",
-				"src/components/TwitterEntities/TwitterEntities.tsx"
 			]
 		],
 		"width": 0.0
