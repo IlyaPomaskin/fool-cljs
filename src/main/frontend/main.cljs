@@ -2,15 +2,48 @@
   (:require
    [common.card :as c]
    [common.game :as g]
+   [common.player :as p]
    [frontend.cardui :as card-ui]
    [frontend.ui :as ui]
    [uix.core :refer [$ defui]]
-   [uix.dom]))
+   [uix.dom]
+   [clojure.pprint :refer [pprint]]))
 
-(defui player [{:keys [player]}]
+(defui button [{:keys [class size on-click children]}]
+  ($ :button
+     {:class [class
+              (case size
+                :xs "px-3 py-1 font-normal"
+                :sm "px-4 py-1.5 font-medium"
+                "px-6 py-2 font-medium")
+              "inline-block text-xs"
+              "bg-sky-400 text-white uppercase"
+              "rounded shadow-md"
+              "transition duration-300 ease-in-out"
+              "hover:bg-sky-600 hover:shadow-lg"
+              "active:bg-sky-700 active:shadow-xs"
+              "focus:bg-sky-600 focus:outline-none focus:ring-0"]
+      :on-click on-click}
+     children))
+
+(defui player-controls [{:keys [class player]}]
+  ($ :.flex.gap-1 {:class class}
+     ($ button {:size :xs} "Move")
+     ($ button {:size :xs} "Pass")
+     ($ button {:size :xs} "Beat")
+     ($ button {:size :xs} "Take")))
+
+(defui player [{:keys [player attacker? defender?]}]
   (let [[selected set-selected!] (uix.core/use-state nil)]
     ($ ui/panel
        ($ ui/title (:id player))
+
+       (when attacker?
+         ($ :div "attack"))
+
+       (when defender?
+         ($ :div "defend"))
+
        ($ :.flex.flex-row.flex-wrap.gap-2
           (map
            (fn [card]
@@ -19,7 +52,10 @@
                  :card card
                  :on-click #(set-selected! (if (c/equals? selected card) nil card))
                  :selected (c/equals? card selected)}))
-           (:cards player))))))
+           (:cards player)))
+
+       ($ player-controls
+          {:class "pt-4"}))))
 
 (defui table [{:keys [class table]}]
   ($ ui/panel
@@ -61,10 +97,6 @@
 
 (defui game [{:keys [game]}]
   ($ :.flex.flex-col.gap-8
-     (map
-      (fn [item] ($ player {:key (:id item) :player item}))
-      (:players game))
-
      ($ :.flex.gap-8
         ($ ui/panel
            ($ ui/title "Deck")
@@ -72,10 +104,20 @@
 
         ($ table
            {:class "flex-1"
-            :table (:table game)}))))
+            :table (:table game)}))
+     (map
+      (fn [item]
+        ($ player
+           {:key (:id item)
+            :player item
+            :attacker? (p/equals? (:attacker game) item)
+            :defender? (p/equals? (:defender game) item)}))
+
+      (:players game))))
 
 (defui app []
   (let [[state set-value!] (uix.core/use-state (g/make-in-progress ["qwe" "ads" "zxc"]))]
+    (pprint state)
     ($ :.bg-slate-50.p-8.h-full.w-full
        ($ :.container
           ($ game {:game state})))))

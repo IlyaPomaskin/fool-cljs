@@ -10,13 +10,15 @@
 
 (defn make-in-progress [player-ids]
   (let [[players deck] (player/deal-deck-to-players
-                        (map player/make player-ids) (deck/make))]
+                        (map player/make player-ids) (deck/make))
+        trump (game-utils/get-initial-trump-card players deck)
+        attacker (player/find-first-attacker trump players)]
     {:pass []
      :table []
      :deck deck
-     :trump (game-utils/get-initial-trump-card players deck)
-     :attacker nil
-     :defender nil
+     :trump trump
+     :attacker attacker
+     :defender (player/get-next-player attacker players)
      :players (vec players)}))
 
 (def games-in-lobby-by-id (atom {}))

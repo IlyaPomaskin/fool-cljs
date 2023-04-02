@@ -66,7 +66,7 @@
 
 (defui hidden []
   ($ base
-     {:class ["bg-slate-200 text-xs pt-4 text-center"]}
+     {:class ["text-slate-300 text-xs text-center" flex-center]}
      "Hidden"))
 
 (defui slot []
