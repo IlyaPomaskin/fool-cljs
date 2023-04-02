@@ -69,9 +69,10 @@
      {:class ["text-slate-300 text-xs text-center" flex-center]}
      "Hidden"))
 
-(defui slot []
+(defui slot [{:keys [on-click]}]
   ($ base
-     {:class ["text-slate-300 text-xs text-center" flex-center]}
+     {:class ["text-slate-300 text-xs text-center" flex-center]
+      :on-click on-click}
      "Empty"))
 
 (defui trump [{:keys [trump]}]

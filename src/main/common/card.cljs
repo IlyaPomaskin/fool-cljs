@@ -20,6 +20,8 @@
 
 (defn equals? [a b]
   (and
+   (not (nil? a))
+   (not (nil? b))
    (equals-by-rank? a b)
    (equals-by-suit? a b)))
 
@@ -30,7 +32,6 @@
 
 (defn lt-by-rank [a b]
   (< (get-rank-index a) (get-rank-index b)))
-
 
 (defn gt-by-rank [a b]
   (not (lt-by-rank a b)))
