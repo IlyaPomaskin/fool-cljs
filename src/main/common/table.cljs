@@ -1,6 +1,6 @@
 (ns common.table
   (:require
-   [common.card :as card]))
+   [common.card :as c]))
 
 (defn beaten? [[a b]]
   (and
@@ -25,4 +25,4 @@
    table))
 
 (defn correct-additional-card? [card table]
-  (some #(card/equals-by-rank? card %) (flatten table)))
+  (some #(c/equals-by-rank? card %) (flatten table)))

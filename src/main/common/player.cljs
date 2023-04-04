@@ -25,7 +25,7 @@
      :cards (deck/mask-deck (:cards player))}))
 
 (defn player-has-card? [card player]
-  (some #(= card %) (:cards player)))
+  (some #(card/equals? card %) (:cards player)))
 
 (defn player-has-cards? [player]
   (not (empty? (:cards player))))
@@ -80,3 +80,8 @@
 (defn get-by-id [list id]
 ; TODO
   nil)
+
+(defn get-player-index [list player]
+  (utils/find-item-index
+   #(equals? player %)
+   list))

@@ -2,7 +2,8 @@
   (:require
    [common.deck :as deck]
    [common.game-utils :as game-utils]
-   [common.player :as player]))
+   [common.player :as player]
+   [cljs.core :as c]))
 
 (defn make-in-lobby [owner]
   {:owner owner
@@ -51,8 +52,15 @@
   (game-exists?! gameId)
   (enter-lobby! player gameId))
 
-(defn start [game] nil)
-(defn move [card player game] nil)
+(defn first-error [checks]
+  (reduce
+   (fn [acc-error [fn error]]
+     (if (nil? error)
+       (when (fn) error)
+       acc-error))
+   nil
+   checks))
+
 (defn pass [player game] nil)
 (defn beat [by to player game] nil)
 (defn take' [player game] nil)
