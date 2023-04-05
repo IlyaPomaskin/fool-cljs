@@ -1,17 +1,12 @@
 (ns common.game.move
   (:require
+   [common.game-utils :refer [game-action]]
    [common.player :as player]
-   [common.table :as table]))
+   [common.table :as table]
+   [common.utils :refer [first-error]]))
 
-(defn check-move [card' player' game']
-  (reduce
-   (fn [acc-error [fn error]]
-     (if (nil? acc-error)
-       (when (apply fn nil) error)
-       acc-error))
-
-   nil
-
+(defn move-check [card' player' game']
+  (first-error
    [[#(and (empty? (:table game'))
            (not (player/equals? (:attacker game') player')))
      "First move made not by attacked"]
@@ -34,49 +29,52 @@
      "Incorrect card"]]))
 
 (comment
-  (check-move
+  (move-check
    {:suit :spades :rank :six}
    {:cards [] :id 333}
    {:table []
     :attacker {:cards [] :id 111}
     :defender {:cards [] :id 111}})
 
-  (check-move
+  (move-check
    {:suit :spades :rank :six}
    {:cards [] :id 111}
    {:table []
     :attacker {:cards [] :id 111}
     :defender {:cards [] :id 111}})
 
-  (check-move
+  (move-check
    {:suit :spades :rank :six}
    {:cards [] :id 111}
    {:table (repeat 6 [{:suit :spades :rank :six} nil])
     :attacker {:cards [] :id 111}
     :defender {:cards [] :id 222}})
 
-  (check-move
+  (move-check
    {:suit :spades :rank :six}
    {:cards [] :id 111}
    {:table []
     :attacker {:cards [] :id 111}
     :defender {:cards [] :id 222}})
 
-  (check-move
+  (move-check
    {:suit :hearts :rank :seven}
    {:cards [{:suit :hearts :rank :seven}] :id 111}
    {:table [[{:suit :spades :rank :six} nil]]
     :attacker {:cards [] :id 111}
     :defender {:cards [] :id 222}}))
 
-(defn move [card player game]
-  (let [check-result (check-move card player game)
+(defn move-action [card player game]
+  (let [check-result (move-check card player game)
         player-index (player/get-player-index (:players game) player)]
     (if (nil? check-result)
       (-> game
           (update-in [:players player-index] #(player/remove-card card %))
           (update :table #(conj % [card nil])))
       check-result)))
+
+(defn move [card player game]
+  (game-action move-check move-action [card player game]))
 
 (comment
   (move

@@ -53,3 +53,9 @@
    (:players game)
    (remove #(defender? % game))
    (every? #(passed? % game))))
+
+(defn game-action [check-fn action-fn args]
+  (let [check-result (apply check-fn args)]
+     (if (nil? check-result)
+       (apply action-fn args)
+       check-result)))

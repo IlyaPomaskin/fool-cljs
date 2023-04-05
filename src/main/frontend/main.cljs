@@ -3,6 +3,8 @@
    [clojure.pprint :refer [pprint]]
    [common.card :as c]
    [common.game :as g]
+   [common.game.move :as gm]
+   [common.game.pass :as gp]
    [common.player :as p]
    [frontend.cardui :as card-ui]
    [frontend.ui :as ui]
@@ -14,11 +16,11 @@
                           :as action}]
   (case type
     :move (let [{card :card} action]
-            (g/move card player game))
+            (gm/move card player game))
 
     :take (g/take' player game)
 
-    :pass (g/pass player game)
+    :pass (gp/pass player game)
 
     :beat (let [{by :by to :to} action]
             (g/beat by to player game))))
