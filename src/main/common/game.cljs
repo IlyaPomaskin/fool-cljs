@@ -3,7 +3,9 @@
    [common.deck :as deck]
    [common.game-utils :as game-utils]
    [common.player :as player]
-   [cljs.core :as c]))
+   [cljs.core :as c]
+   [clojure.spec.alpha :as s]
+   [specs]))
 
 (defn make-in-lobby [owner]
   {:owner owner
@@ -12,7 +14,7 @@
 (defn make-in-progress [player-ids]
   (let [[players deck] (player/deal-deck-to-players
                         (map player/make player-ids) (deck/make))
-        trump (game-utils/get-initial-trump-card players deck)
+        trump (game-utils/get-initial-trump-card deck players)
         attacker (player/find-first-attacker trump players)]
     {:pass []
      :table []
@@ -21,6 +23,10 @@
      :attacker attacker
      :defender (player/get-next-player attacker players)
      :players (vec players)}))
+
+(s/fdef make-in-progress
+  :args (s/cat :player-ids :specs/session-id)
+  :ret :specs/game)
 
 (def games-in-lobby-by-id (atom {}))
 (def games-in-progress-by-id (atom {}))

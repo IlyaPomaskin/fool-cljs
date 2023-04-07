@@ -3,7 +3,9 @@
    [common.game-utils :refer [game-action]]
    [common.player :as player]
    [common.table :as table]
-   [common.utils :refer [first-error]]))
+   [common.utils :refer [first-error]]
+   [clojure.spec.alpha :as s]
+   [specs]))
 
 (defn move-check [card' player' game']
   (first-error
@@ -27,6 +29,12 @@
     [#(and (not (table/correct-additional-card? card' (:table game')))
            (not (empty? (:table game'))))
      "Incorrect card"]]))
+
+(s/fdef move-check
+  :args (s/cat :card' :specs/card
+               :player' :specs/player
+               :game' :specs/game)
+  :ret (s/nilable string?))
 
 (comment
   (move-check
@@ -73,8 +81,22 @@
           (update :table #(conj % [card nil])))
       check-result)))
 
+(s/fdef move-action
+  :args (s/cat :card :specs/card
+               :player :specs/player
+               :game :specs/game)
+  :ret (s/or :error string?
+             :game :specs/game))
+
 (defn move [card player game]
   (game-action move-check move-action [card player game]))
+
+(s/fdef move
+  :args (s/cat :card :specs/card
+               :player :specs/player
+               :game :specs/game)
+  :ret (s/or :error string?
+             :game :specs/game))
 
 (comment
   (move

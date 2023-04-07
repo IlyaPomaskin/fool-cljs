@@ -2,7 +2,9 @@
   (:require
    [common.game-utils :refer [game-action]]
    [common.player :as p]
-   [common.utils :refer [find-item first-error]]))
+   [common.utils :refer [find-item first-error]]
+   [clojure.spec.alpha :as s]
+   [specs]))
 
 (defn pass-check [player' game']
   (first-error
@@ -12,6 +14,11 @@
     [#(empty? (:table game'))
      "Round not started"]]))
 
+(s/fdef pass-check
+  :args (s/cat :player' :specs/player
+               :game' :specs/game)
+  :ret (s/nilable string?))
+
 (defn pass-action [player game]
   (let [player-passed? (find-item #(p/equals? % player) (:pass game))]
     (update
@@ -20,8 +27,19 @@
        (fn [pass-list] (remove #(p/equals? % player) pass-list))
        #(conj % player)))))
 
+(s/fdef pass-action
+  :args (s/cat :player :specs/player
+               :game :specs/game)
+  :ret :specs/game)
+
 (defn pass [player game]
   (game-action pass-check pass-action [player game]))
+
+(s/fdef pass
+  :args (s/cat :player :specs/player
+               :game :specs/game)
+  :ret (s/or :error string?
+             :game :specs/game))
 
 (comment
   (pass
