@@ -19,13 +19,28 @@
                :game' :specs/game)
   :ret (s/nilable string?))
 
+; (defn move-action [card player game]
+;   (let [error (move-check card player game)
+;         player-index (player/get-player-index (:players game) player)]
+;     (if (nil? error)
+;       (-> game
+;           (update-in [:players player-index] #(player/remove-card card %))
+;           (update :table #(conj % [card nil]))
+;           (assoc :error nil))
+;       (assoc game :error error))))
+
 (defn pass-action [player game]
-  (let [player-passed? (find-item #(p/equals? % player) (:pass game))]
-    (update
-     game :pass
-     (if player-passed?
-       (fn [pass-list] (remove #(p/equals? % player) pass-list))
-       #(conj % player)))))
+  (let [error (pass-check player game)
+        player-passed? (find-item #(p/equals? % player) (:pass game))]
+    (if (nil? error)
+      (-> game
+          (update
+           :pass
+           (if player-passed?
+             (fn [pass-list] (remove #(p/equals? % player) pass-list))
+             #(conj % player)))
+          (assoc :error nil))
+      (assoc game :error error))))
 
 (s/fdef pass-action
   :args (s/cat :player :specs/player
@@ -33,7 +48,7 @@
   :ret :specs/game)
 
 (defn pass [player game]
-  (game-action pass-check pass-action [player game]))
+  (pass-action player game))
 
 (s/fdef pass
   :args (s/cat :player :specs/player

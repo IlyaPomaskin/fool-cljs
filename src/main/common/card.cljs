@@ -3,7 +3,6 @@
    [common.consts :refer [ranks]]
    [common.utils :refer [find-item-index]]
    [clojure.spec.alpha :as s]
-   [clojure.spec.test.alpha :as stest]
    [specs]))
 
 (defn hidden? [card]

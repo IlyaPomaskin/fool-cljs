@@ -50,9 +50,10 @@
   (let [[_ dispatch!] (uix.core/use-context game-context)
         [player-state] (uix.core/use-context player-state-context)]
     ($ :.flex.gap-1 {:class class}
-       ($ ui/button {:size :xs :on-click #(dispatch! {:type :move
-                                                      :player player
-                                                      :card (:player-selected player-state)})} "Move")
+       ($ ui/button {:size :xs
+                     :on-click #(dispatch! {:type :move
+                                            :player player
+                                            :card (:player-selected player-state)})} "Move")
        ($ ui/button {:size :xs} "Pass")
        ($ ui/button {:size :xs} "Beat")
        ($ ui/button {:size :xs} "Take"))))
@@ -83,7 +84,8 @@
            (:cards player)))
 
        ($ player-controls
-          {:class "pt-4"}))))
+          {:class "pt-4"
+           :player player}))))
 
 (defui table [{:keys [class table]}]
   (let [[_ set-player-state!] (uix.core/use-context player-state-context)]
@@ -98,7 +100,7 @@
                ($ card-ui/slot)))
 
           (map
-           (fn [{:keys [to by]}]
+           (fn [[to by]]
              ($ :.flex.flex-col.gap-2 {:key (card-ui/to-string to)}
                 ($ card-ui/visible
                    {:card to
@@ -137,6 +139,10 @@
         ($ table
            {:class "flex-1"
             :table (:table game)}))
+
+     (when (:error game)
+       ($ :.text-md.pb-2.select-none (:error game)))
+
      (map
       (fn [item]
         ($ player

@@ -34,6 +34,7 @@
 (s/def ::attacker ::player)
 (s/def ::defender ::player)
 (s/def ::players (s/* ::player))
+(s/def ::error string?)
 
 (s/def ::game
-  (s/keys :req-un [::pass ::table ::deck ::trump ::attacker ::defender ::players]))
+  (s/keys :req-un [::pass ::table ::deck ::trump ::attacker ::defender ::players ::error]))
