@@ -10,7 +10,7 @@
      "Attacker can't pass"]
 
     [#(empty? (:table game'))
-     "Not started"]]))
+     "Round not started"]]))
 
 (defn pass-action [player game]
   (let [player-passed? (find-item #(p/equals? % player) (:pass game))]
