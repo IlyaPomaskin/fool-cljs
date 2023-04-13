@@ -1,6 +1,5 @@
 (ns common.game.move
   (:require
-   [common.game-utils :refer [game-action]]
    [common.player :as player]
    [common.table :as table]
    [common.utils :refer [first-error]]

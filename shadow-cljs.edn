@@ -6,7 +6,8 @@
  :dependencies
  [[binaryage/devtools "1.0.2"]
   [com.pitch/uix.core "0.8.1"]
-  [com.pitch/uix.dom "0.8.1"]]
+  [com.pitch/uix.dom "0.8.1"]
+  [org.clojure/test.check "1.1.1"]]
 
  :dev-http {3000 "public"}
 

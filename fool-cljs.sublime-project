@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [
+				"public/js",
+				"node_modules",
+				"out",
+				".shadow-cljs",
+                ".lsp",
+                ".clj-kondo",
+                "*.js"
+            ]
+		}
+	]
+}

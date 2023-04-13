@@ -2,39 +2,12 @@
   (:require
    [clojure.pprint :refer [pprint]]
    [common.card :as c]
-   [common.game :as g]
-   [common.game.move :as gm]
-   [common.game.pass :as gp]
    [common.player :as p]
    [frontend.cardui :as card-ui]
    [frontend.ui :as ui]
    [uix.core :refer [$ defui]]
-   [uix.dom]))
-
-(defn game-reducer [game {type :type
-                          player :player
-                          :as action}]
-  (case type
-    :move (let [{card :card} action]
-            (gm/move card player game))
-
-    :take (g/take' player game)
-
-    :pass (gp/pass player game)
-
-    :beat (let [{by :by to :to} action]
-            (g/beat by to player game))))
-
-(defn use-game-reducer [initial-value]
-  (let [[value dispatch!] (uix.core/use-reducer game-reducer initial-value)]
-    [value dispatch!]))
-
-(def game-context (uix.core/create-context []))
-(defui game-provider [{:keys [children]}]
-  (let [[game dispatch!] (use-game-reducer (g/make-in-progress ["qwe" "ads" "zxc"]))]
-    (pprint game)
-    ($ (.-Provider game-context) {:value [game dispatch!]}
-       children)))
+   [uix.dom]
+   [frontend.game-context :as game-context]))
 
 (def player-state-context (uix.core/create-context []))
 (defui player-state-provider [{:keys [children]}]
@@ -47,15 +20,21 @@
        children)))
 
 (defui player-controls [{:keys [class player]}]
-  (let [[_ dispatch!] (uix.core/use-context game-context)
+  (let [[_ dispatch!] (uix.core/use-context game-context/context)
         [player-state] (uix.core/use-context player-state-context)]
     ($ :.flex.gap-1 {:class class}
        ($ ui/button {:size :xs
                      :on-click #(dispatch! {:type :move
                                             :player player
-                                            :card (:player-selected player-state)})} "Move")
+                                            :card (:player-selected player-state)})}
+          "Move")
        ($ ui/button {:size :xs} "Pass")
-       ($ ui/button {:size :xs} "Beat")
+       ($ ui/button {:size :xs
+                     :on-click #(dispatch! {:type :beat
+                                            :player player
+                                            :to (:table-selected player-state)
+                                            :by (:player-selected player-state)})}
+          "Beat")
        ($ ui/button {:size :xs} "Take"))))
 
 (defui player [{:keys [player attacker? defender?]}]
@@ -88,7 +67,7 @@
            :player player}))))
 
 (defui table [{:keys [class table]}]
-  (let [[_ set-player-state!] (uix.core/use-context player-state-context)]
+  (let [[player-state set-player-state!] (uix.core/use-context player-state-context)]
 
     ($ ui/panel
        {:class [class]}
@@ -104,6 +83,7 @@
              ($ :.flex.flex-col.gap-2 {:key (card-ui/to-string to)}
                 ($ card-ui/visible
                    {:card to
+                    :selected (c/equals? to (:table-selected player-state))
                     :on-click #(set-player-state! {:table-selected to})})
                 (if (nil? by)
                   ($ card-ui/slot)
@@ -153,7 +133,7 @@
       (:players game))))
 
 (defui app []
-  (let [[game-state] (uix.core/use-context game-context)]
+  (let [[game-state] (uix.core/use-context game-context/context)]
     ($ :.bg-slate-50.p-8.h-full.w-full
        ($ :.container
           ($ game {:game game-state})))))
@@ -163,7 +143,8 @@
 
 (defn init []
   (uix.dom/render-root
-   ($ game-provider
+   ($ game-context/provider
+      {:player-ids ["qwe" "asd" "zxc"]}
       ($ player-state-provider
          ($ app)))
    root))

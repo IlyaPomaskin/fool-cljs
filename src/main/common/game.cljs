@@ -57,7 +57,3 @@
 (defn leave-lobby! [player gameId]
   (game-exists?! gameId)
   (enter-lobby! player gameId))
-
-(defn beat [by to player game] nil)
-(defn take' [player game] nil)
-

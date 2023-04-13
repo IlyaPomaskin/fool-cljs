@@ -121,5 +121,7 @@
                      (lt-by-rank to by)))))
 
 (s/fdef valid-beat?
-  :args (s/cat :trump :specs/suit :to :specs/card :by :specs/card)
+  :args (s/cat :trump :specs/suit
+               :to :specs/card
+               :by :specs/card)
   :ret boolean?)
