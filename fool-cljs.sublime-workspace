@@ -1,0 +1,1863 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"update",
+				"update-in"
+			],
+			[
+				"upda",
+				"update-in"
+			],
+			[
+				"tabl",
+				":table-selected"
+			],
+			[
+				"pla",
+				"player-state"
+			],
+			[
+				"cons",
+				"constantly"
+			],
+			[
+				"bea",
+				"beat-check"
+			],
+			[
+				"so",
+				"some?"
+			],
+			[
+				"isD",
+				"isSidebarOpen"
+			],
+			[
+				"acco",
+				"accountId"
+			],
+			[
+				"Rou",
+				"Router"
+			],
+			[
+				"Mouse",
+				"MouseEventHandler"
+			],
+			[
+				"postin",
+				"openPostingFormForLinkUrl"
+			],
+			[
+				"post",
+				"postingForLinkUrl"
+			],
+			[
+				"useEffe",
+				"useEffectOnChange"
+			],
+			[
+				"postli",
+				"postingForLinkUrl"
+			],
+			[
+				"account",
+				"accountId"
+			],
+			[
+				"isPo",
+				"isPostingFormVisible"
+			],
+			[
+				"useEff",
+				"useEffectOnChange"
+			],
+			[
+				"Com",
+				".ComponentRef"
+			],
+			[
+				"op",
+				"openPostingFormForLink"
+			],
+			[
+				"transitiont",
+				"transition-timing-function"
+			],
+			[
+				"trans",
+				"transition-duration"
+			],
+			[
+				"clas",
+				"className?"
+			],
+			[
+				"a",
+				"accountsSlice"
+			],
+			[
+				"fon",
+				"fontSize?"
+			],
+			[
+				"Respon",
+				"ResponsiveContainer"
+			],
+			[
+				"lin",
+				"LineChart"
+			],
+			[
+				"sec",
+				"secondaryAxis"
+			],
+			[
+				"left",
+				"?.left"
+			],
+			[
+				"st",
+				".styles"
+			],
+			[
+				"ho",
+				"?.hostname"
+			],
+			[
+				"Twitter",
+				"TwitterUser"
+			],
+			[
+				"tri",
+				"triggerProps"
+			],
+			[
+				"handle",
+				"handleBackgroundClick"
+			],
+			[
+				"spec",
+				":specs/player"
+			],
+			[
+				"play",
+				"player-ids"
+			],
+			[
+				"isMas",
+				"isMastodonPost"
+			],
+			[
+				"star",
+				".?.startsWith"
+			],
+			[
+				"h",
+				".href"
+			],
+			[
+				"pop",
+				"popupDelay?"
+			],
+			[
+				"PopupH",
+				"TogglePopupChildrenProps"
+			],
+			[
+				"ac",
+				"action-move"
+			],
+			[
+				"ma",
+				"common.game/make-in-progress"
+			],
+			[
+				"expl",
+				"s/explain-data"
+			],
+			[
+				"even",
+				"event-type"
+			],
+			[
+				"spe",
+				":specs/game"
+			],
+			[
+				"pl",
+				":specs/player"
+			],
+			[
+				"fronten",
+				"frontend.game-context"
+			],
+			[
+				"move",
+				"move-check"
+			],
+			[
+				"boo",
+				"boolean?"
+			],
+			[
+				"reg",
+				"s/registry"
+			],
+			[
+				"make-in",
+				"make-in-progress"
+			],
+			[
+				"de",
+				":deck/deck"
+			],
+			[
+				"ca",
+				":card/card"
+			],
+			[
+				"remove",
+				"remove-card"
+			],
+			[
+				"dec",
+				":deck/deck"
+			],
+			[
+				"deck",
+				":deck/deck"
+			],
+			[
+				"car",
+				":card/card"
+			],
+			[
+				"remo",
+				"remove-card"
+			],
+			[
+				"nu",
+				"number?"
+			],
+			[
+				"bool",
+				"boolean?"
+			],
+			[
+				"card",
+				":card/suit"
+			],
+			[
+				"equ",
+				"equals-by-rank?"
+			],
+			[
+				"f",
+				"s/fspec"
+			],
+			[
+				"equa",
+				"equals-by-suit?"
+			],
+			[
+				"conform",
+				"s/conformer"
+			],
+			[
+				"exp",
+				"s/explain-data"
+			],
+			[
+				"ke",
+				"s/keys*"
+			],
+			[
+				"ses",
+				"session-id"
+			],
+			[
+				"tab",
+				":table/pair"
+			],
+			[
+				"bo",
+				"boolean?"
+			],
+			[
+				"empty",
+				"empty?"
+			],
+			[
+				"check",
+				"check-result"
+			],
+			[
+				"up",
+				"update-in"
+			],
+			[
+				"player",
+				"player-index"
+			],
+			[
+				"get",
+				"player/get-player-index"
+			],
+			[
+				"la",
+				"layout?"
+			],
+			[
+				"useEf",
+				"useEffectOnChange"
+			],
+			[
+				"cl",
+				"className?"
+			],
+			[
+				"u",
+				".url"
+			],
+			[
+				"tw",
+				"tweetId"
+			],
+			[
+				"overf",
+				"overflow"
+			],
+			[
+				"cre",
+				".createElement"
+			],
+			[
+				"c",
+				".children"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"Mastodon",
+				"MastodonCard"
+			],
+			[
+				"playe",
+				"player-control"
+			],
+			[
+				"deff",
+				":deffender?"
+			],
+			[
+				"g",
+				"player/get-next-player"
+			],
+			[
+				"at",
+				"attacker?"
+			],
+			[
+				"las",
+				"last-card"
+			],
+			[
+				"has",
+				"has-cards?"
+			],
+			[
+				"ey",
+				":keys"
+			],
+			[
+				"selec",
+				":selected"
+			],
+			[
+				"card-",
+				"card-to-string"
+			],
+			[
+				"ass",
+				"assoc"
+			],
+			[
+				"top",
+				"to-pink-200"
+			],
+			[
+				"bg",
+				"bg-gradient-to-tl"
+			],
+			[
+				"group",
+				"groupped"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"eas",
+				"easeOut"
+			],
+			[
+				"Animat",
+				"AnimatePresence"
+			],
+			[
+				"catego",
+				"categories"
+			],
+			[
+				"exten",
+				"extendedTabs"
+			],
+			[
+				"fle",
+				"inline-flex"
+			],
+			[
+				"try",
+				"tryCatch"
+			],
+			[
+				"mn",
+				"mn"
+			],
+			[
+				"fil",
+				".filter"
+			],
+			[
+				"useEx",
+				"useSyncExternalStore"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"Popup",
+				"HoverPopupProps"
+			],
+			[
+				"Create",
+				"CreateCategoriesTab"
+			],
+			[
+				"Opini",
+				"OpinionFeed"
+			],
+			[
+				"Enric",
+				"EnrichedPost"
+			],
+			[
+				"useQu",
+				"useQuery"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"ri",
+				"right-start"
+			],
+			[
+				"top-",
+				"top-end"
+			],
+			[
+				"act",
+				"?.actionsOwn"
+			],
+			[
+				"rela",
+				"relatedCount"
+			],
+			[
+				"action",
+				"actionTypes"
+			],
+			[
+				"ea",
+				"easeOut"
+			],
+			[
+				"game",
+				"games-in-lobby-by-id"
+			],
+			[
+				"gam",
+				"games-in-lobby-by-id"
+			],
+			[
+				"game-",
+				"games-in-lobby-by-id"
+			],
+			[
+				"rand",
+				"rand-int"
+			],
+			[
+				"asso",
+				"assoc-in"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"shad",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"custo",
+				"UI: Customize Theme"
+			],
+			[
+				"projec",
+				"Project: Refresh Folders"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimed connect",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"sha",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"un",
+				"Code Folding: Unfold All"
+			],
+			[
+				"lsp set",
+				"Preferences: LSP Settings"
+			],
+			[
+				"lsp sett",
+				"Preferences: LSP Settings"
+			],
+			[
+				"lsp log",
+				"LSP: Toggle Log Panel"
+			],
+			[
+				"log",
+				"LSP: Toggle Log Panel"
+			],
+			[
+				"lsp res",
+				"LSP: Restart Server"
+			],
+			[
+				"rein",
+				"Clojure Sublimed: Reindent Lines"
+			],
+			[
+				"form",
+				"LSP: Format File"
+			],
+			[
+				"fora",
+				"LSP: Format File"
+			],
+			[
+				"forma",
+				"Prettier: Format"
+			],
+			[
+				"conne",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"discon",
+				"Clojure Sublimed: Disconnect"
+			],
+			[
+				"proj",
+				"Project: Refresh Folders"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"con",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"shado",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"unf",
+				"Code Folding: Unfold All"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"for",
+				"Prettier: Format"
+			],
+			[
+				"clo",
+				"File: Close All"
+			],
+			[
+				"cloa",
+				"File: Close All"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"unfol",
+				"Code Folding: Unfold All"
+			],
+			[
+				"shadw",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"sa",
+				"File: Save All"
+			],
+			[
+				"close ",
+				"File: Close All"
+			],
+			[
+				"clos",
+				"File: Close All"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"cloj pre",
+				"Preferences: Clojure Sublimed Settings"
+			],
+			[
+				"cloj",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"lsp ",
+				"Preferences: LSP Settings"
+			],
+			[
+				"cloj log",
+				"Clojure Sublimed: Toggle Info"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"lsp for",
+				"LSP: Format File"
+			],
+			[
+				"lsp of",
+				"LSP: Format File"
+			],
+			[
+				"redin bu",
+				"Clojure Sublimed: Reindent Buffer"
+			],
+			[
+				"rein b",
+				"Clojure Sublimed: Reindent Buffer"
+			],
+			[
+				"re",
+				"Clojure Sublimed: Reindent Lines"
+			],
+			[
+				"rei",
+				"Clojure Sublimed: Reindent Lines"
+			],
+			[
+				"format",
+				"LSP: Format File"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"clojure",
+				"Clojure Sublimed: Toggle Info"
+			],
+			[
+				"eva",
+				"Clojure Sublimed: Evaluate Buffer"
+			],
+			[
+				"clojure con",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"eval",
+				"Clojure Sublimed: Clear Evaluation Results"
+			],
+			[
+				"lsp en",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"lsp per",
+				"Preferences: LSP Settings"
+			],
+			[
+				"lsp",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"e",
+				"Clojure Sublimed: Evaluate"
+			],
+			[
+				"conn",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"new fil",
+				"File: New View into File"
+			],
+			[
+				"Preferences: Prettier",
+				"Preferences: Prettier"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"add re",
+				"Package Control: Add Repository"
+			],
+			[
+				"save a",
+				"File: Save All"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"close a",
+				"File: Close All"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"go to def",
+				"LSP: Goto Definition…"
+			],
+			[
+				"the",
+				"UI: Select Color Scheme"
+			],
+			[
+				"js",
+				"JsPrettier: Format Code"
+			],
+			[
+				"them",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color ",
+				"UI: Select Color Scheme"
+			],
+			[
+				"th",
+				"UI: Select Theme"
+			],
+			[
+				"fold",
+				"Code Folding: Unfold"
+			],
+			[
+				"col",
+				"UI: Select Color Scheme"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"keybi",
+				"Preferences: LSP Key Bindings"
+			],
+			[
+				"code acti",
+				"LSP: Code Action…"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"save ",
+				"File: Save All"
+			],
+			[
+				"close all",
+				"File: Close All"
+			],
+			[
+				"prettier",
+				"Preferences: JsPrettier Settings - Side-by-Side"
+			],
+			[
+				"pretter",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"lint",
+				"Preferences: SublimeLinter Key Bindings"
+			],
+			[
+				"set syntax jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"syntax js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"fo",
+				"JsPrettier: Format Code"
+			],
+			[
+				"prett",
+				"Preferences: JsPrettier Settings - Side-by-Side"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings"
+			],
+			[
+				"Preferences: LSP-typescript Settings",
+				"Preferences: LSP-typescript Settings"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"lsp settin",
+				"LSP: Goto Implementation"
+			],
+			[
+				"sav",
+				"File: Save All"
+			],
+			[
+				"import",
+				"TypeScript: Organize Imports"
+			],
+			[
+				"sideba",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"fix",
+				"TypeScript: Request Code Fixes"
+			],
+			[
+				"jspre",
+				"JsPrettier: Format Code"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"LSP",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"stage",
+				"Git: Diff Staged Files"
+			],
+			[
+				"dif",
+				"Git: Diff Current File"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rescr",
+				"Set Syntax: ReScript"
+			],
+			[
+				"sidebar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"eslint",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"go",
+				"TypeScript: GoTo Definition"
+			],
+			[
+				"pretti",
+				"JsPrettier: Format Code"
+			],
+			[
+				"settin",
+				"Preferences: Settings"
+			],
+			[
+				"eslin",
+				"TypeScript: Format Line"
+			],
+			[
+				"linter ",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"sublime lint",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"instaa",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 342.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ipomaskin/work/fool-cljs",
+		"/Users/ipomaskin/work/fool-cljs/src",
+		"/Users/ipomaskin/work/fool-cljs/src/main",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend"
+	],
+	"file_history":
+	[
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/game_context.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/card.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/main.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game/move.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game/beat.cljs",
+		"/Users/ipomaskin/work/fool-cljs/fool-cljs.sublime-project",
+		"/Users/ipomaskin/work/fool-cljs/src/main/main.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/table.cljs",
+		"/Users/ipomaskin/work/fool-cljs/fool.sublime-project",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/utils.cljs",
+		"/Users/ipomaskin/work/opinions/src/components/Link/Link.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/Link/useExtLinkHandler.ts",
+		"/Users/ipomaskin/work/opinions/src/entries/ext.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/App/useLoadAccount.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/App/App.tsx",
+		"/Users/ipomaskin/work/opinions/src/utils/env.ts",
+		"/Users/ipomaskin/work/opinions/src/utils/iframes.ts",
+		"/Users/ipomaskin/work/opinions/src/entries/inject.ts",
+		"/Users/ipomaskin/work/opinions/src/utils/messages.ts",
+		"/Users/ipomaskin/work/opinions/src/components/Widget/Widget.tsx",
+		"/Users/ipomaskin/work/opinions/src/entries/dev.tsx",
+		"/Users/ipomaskin/work/opinions/src/store/index.ts",
+		"/Users/ipomaskin/work/opinions/node_modules/zustand/vanilla.d.ts",
+		"/Users/ipomaskin/work/opinions/src/components/Widget/usePostButton.ts",
+		"/Users/ipomaskin/work/opinions/src/components/App/useNavigateInSidebar.ts",
+		"/Users/ipomaskin/work/opinions/src/components/App/routes.tsx",
+		"/Users/ipomaskin/work/opinions/node_modules/react-router-dom/dist/index.d.ts",
+		"/Users/ipomaskin/work/opinions/node_modules/@types/react/index.d.ts",
+		"/Users/ipomaskin/work/opinions/src/components/App/Root/Root.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/AvatarStack/AvatarStack.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/AvatarStack/useUniqAccounts.ts",
+		"/Users/ipomaskin/work/opinions/src/components/App/Root/useNavigateInSidebar.ts",
+		"/Users/ipomaskin/Downloads/story_timeline_data_sample.crash",
+		"/Users/ipomaskin/work/opinions/ops.sublime-project",
+		"/Users/ipomaskin/work/opinions/opinions.sublime-project",
+		"/Users/ipomaskin/work/opinions/scripts/build.mjs",
+		"/Users/ipomaskin/work/opinions/src/entries/widget.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/PopupTwitterAccount/TwitterAccountContent/TwitterAccountContent.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/TwitterUser/TwitterUser.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/Input/InputWithForm/useFormValueWithValidation.ts",
+		"/Users/ipomaskin/work/opinions/src/components/PostingForm/useUrlInput.ts",
+		"/Users/ipomaskin/work/opinions/src/components/Input/InputWithForm/InputWithForm.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/PostingForm/PostingForm.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/Input/InputUrl/InputUrl.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/Widget/Collapsed/Collapsed.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/Widget/Detail/Detail.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/PostingForm/AnimateSlideInOut/AnimateSlideInOut.tsx",
+		"/Users/ipomaskin/work/opinions/package.json",
+		"/Users/ipomaskin/work/opinions/src/components/PostingForm/useShadow.ts",
+		"/Users/ipomaskin/work/opinions/src/hooks/useEffectOnChange.ts",
+		"/Users/ipomaskin/work/opinions/src/hooks/useScrollShadow.ts",
+		"/Users/ipomaskin/work/opinions/src/components/PostingForm/PostingForm.module.css",
+		"/Users/ipomaskin/work/opinions/src/components/AnimateOpacity/AnimateOpacity.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/Widget/hooks.ts",
+		"/Users/ipomaskin/work/opinions/src/components/PostingForm/useLinkQuery.ts",
+		"/Users/ipomaskin/work/opinions/src/components/Widget/Collapsed/Collapsed.module.css",
+		"/Users/ipomaskin/work/opinions/src/components/Button/Button.module.css",
+		"/Users/ipomaskin/work/opinions/public/dev.html",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/components/Related/Related.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/components/Related/components/Collapsed/Collapsed.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/Tabs/Tab.module.css",
+		"/Users/ipomaskin/work/opinions/src/components/AvatarStack/AvatarStack.module.css",
+		"/Users/ipomaskin/work/opinions/src/pages/Graph/Graph.tsx",
+		"/Users/ipomaskin/work/opinions/src/pages/Graph/data.ts",
+		"/Users/ipomaskin/work/opinions/src/utils/queries/fetchLinksDailyTop.ts",
+		"/Users/ipomaskin/work/opinions/node_modules/recharts/types/cartesian/Line.d.ts",
+		"/Users/ipomaskin/work/opinions/node_modules/recharts/types/util/types.d.ts",
+		"/Users/ipomaskin/work/opinions/src/pages/Graph/useDemoConfig.tsx",
+		"/Users/ipomaskin/work/opinions/node_modules/react-charts/types/components/Chart.d.ts",
+		"/Users/ipomaskin/work/opinions/node_modules/react-charts/types/types.d.ts",
+		"/Users/ipomaskin/work/opinions/node_modules/react-charts/types/components/TooltipRenderer.d.ts",
+		"/Users/ipomaskin/work/opinions/src/pages/Graph/useDemoConfig.ts",
+		"/Users/ipomaskin/work/opinions/src/pages/Graph/Graph.module.css",
+		"/Users/ipomaskin/work/opinions/src/components/LinkPreview/LinkPreview.module.css",
+		"/Users/ipomaskin/work/opinions/src/components/LinkPreview/LinkPreview.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/components/User/User.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/OpinionFeed.tsx",
+		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/Feed/Feed.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionRelated/components/Header/Header.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/components/User/User.module.css",
+		"/Users/ipomaskin/work/opinions/src/components/LinkPreviewFeed/components/SocialMenu/SocialMenu.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionRelated/components/Header/Header.module.css",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/useExpandState.ts",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionRelated/OpinionRelated.tsx",
+		"/Users/ipomaskin/work/opinions/android/app/src/main/assets/public/manifest.json",
+		"/Users/ipomaskin/work/opinions/manifest_templates/chromeV3.json",
+		"/Users/ipomaskin/work/opinions/manifest_templates/firefoxV2.json",
+		"/Users/ipomaskin/work/opinions/manifest_templates/pwa.json",
+		"/Users/ipomaskin/work/fool-cljs/src/main/specs.cljs",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/OpinionFeed.module.css",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/components/useAnimationState.ts",
+		"/Users/ipomaskin/work/opinions/src/components/AnimateHeight/AnimateHeight.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionRelated/components/Opinion/Opinion.tsx",
+		"/Users/ipomaskin/work/opinions/src/types/types.ts",
+		"/Users/ipomaskin/work/opinions/src/utils/constants.ts",
+		"/Users/ipomaskin/work/opinions/src/utils/fn.ts",
+		"/Users/ipomaskin/work/opinions/src/hooks/useEnv.ts",
+		"/Users/ipomaskin/work/opinions/src/context/env.ts",
+		"/Users/ipomaskin/work/opinions/src/utils/ga.ts",
+		"/Users/ipomaskin/work/opinions/src/components/PopupHint/PopupHint.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/Popup/TogglePopup/TogglePopup.tsx",
+		"/Users/ipomaskin/work/opinions/src/global.d.ts",
+		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/Feed/usePostsRequest.ts",
+		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/DailyTop/DailyTop.tsx",
+		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/DailyTop/useDailyTopQuery.ts",
+		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/Mutuals/useMutualsRequest.ts",
+		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/Mutuals/Mutuals.tsx",
+		"/Users/ipomaskin/work/fool-cljs/shadow-cljs.edn",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/player.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/ui.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game/pass.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game_utils.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/deck.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/specs.cljs",
+		"/Users/ipomaskin/work/opinions/src/components/TwitterEntities/TwitterEntities.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/MastodonPost/MastodonPost.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/InfiniteList/InfiniteList.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/EnrichedLinkFeed/EnrichedLinkFeed.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/AnimateSlide/AnimateSlide.tsx",
+		"/Users/ipomaskin/work/opinions/src/pages/Feed/FeedLayout.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/AnimatedOutlet/AnimatedOutlet.tsx",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/models.ts",
+		"/Users/ipomaskin/work/opinions/src/components/OpinionRelated/hooks.ts",
+		"/Users/ipomaskin/work/opinions/src/types/models.ts",
+		"/Users/ipomaskin/work/opinions/src/utils/queries/fetchFeed.ts",
+		"/Users/ipomaskin/work/opinions/src/components/MastodonPost/MastodonPost.module.css",
+		"/Users/ipomaskin/work/opinions/node_modules/html-react-parser/index.d.ts"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"(s/cat :player :specs/player\n               :game :specs/game\n               :to :specs/card\n               :by :specs/card)",
+			"pass",
+			"move-action",
+			"deffender",
+			"game'",
+			"player'",
+			"pass-action",
+			"toggle-pass",
+			"pass-check",
+			"pass"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 73.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 397.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 108.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 109.0
+	},
+	"output.diagnostics":
+	{
+		"height": 146.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 109.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 108.0
+	},
+	"output.language servers":
+	{
+		"height": 108.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.references":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "",
+	"project": "fool-cljs.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"fool",
+				"fool-cljs.sublime-project"
+			],
+			[
+				"move",
+				"src/main/common/game/move.cljs"
+			],
+			[
+				"main",
+				"src/main/frontend/main.cljs"
+			],
+			[
+				"card",
+				"src/main/common/card.cljs"
+			],
+			[
+				"con",
+				"src/main/frontend/game_context.cljs"
+			],
+			[
+				"bet",
+				"src/main/common/game/beat.cljs"
+			],
+			[
+				"tabl",
+				"src/main/common/table.cljs"
+			],
+			[
+				"gam",
+				"src/main/common/game.cljs"
+			],
+			[
+				"gamecon",
+				"src/main/frontend/game_context.cljs"
+			],
+			[
+				"front",
+				"src/main/frontend/main.cljs"
+			],
+			[
+				"game con",
+				"src/main/frontend/game_context.cljs"
+			],
+			[
+				"link",
+				"src/components/Link/Link.tsx"
+			],
+			[
+				"mes",
+				"src/utils/messages.ts"
+			],
+			[
+				"injec",
+				"src/entries/inject.ts"
+			],
+			[
+				"ifram",
+				"src/utils/iframes.ts"
+			],
+			[
+				"env",
+				"src/utils/env.ts"
+			],
+			[
+				"app",
+				"src/components/App/App.tsx"
+			],
+			[
+				"widg",
+				"src/components/Widget/Widget.tsx"
+			],
+			[
+				"ext",
+				"src/entries/ext.tsx"
+			],
+			[
+				"dev",
+				"src/entries/dev.tsx"
+			],
+			[
+				"ifra",
+				"src/utils/iframes.ts"
+			],
+			[
+				"ex",
+				"src/entries/ext.tsx"
+			],
+			[
+				"ifr",
+				"src/utils/iframes.ts"
+			],
+			[
+				"roo",
+				"src/components/App/Root/Root.tsx"
+			],
+			[
+				"avatars",
+				"src/components/AvatarStack/AvatarStack.tsx"
+			],
+			[
+				"buildmjs",
+				"scripts/build.mjs"
+			],
+			[
+				"usenav",
+				"src/components/App/Root/useNavigateInSidebar.ts"
+			],
+			[
+				"storeinde",
+				"src/store/index.ts"
+			],
+			[
+				"loadac",
+				"src/components/App/useLoadAccount.tsx"
+			],
+			[
+				"devt",
+				"src/entries/dev.tsx"
+			],
+			[
+				"widget",
+				"src/entries/widget.tsx"
+			],
+			[
+				"tac",
+				"src/components/PopupTwitterAccount/TwitterAccountContent/TwitterAccountContent.tsx"
+			],
+			[
+				"widge",
+				"src/components/Widget/Widget.tsx"
+			],
+			[
+				"postin",
+				"src/components/PostingForm/PostingForm.tsx"
+			],
+			[
+				"deta",
+				"src/components/Widget/Detail/Detail.tsx"
+			],
+			[
+				"post",
+				"src/components/PostingForm/PostingForm.tsx"
+			],
+			[
+				"store",
+				"src/store/index.ts"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"posting",
+				"src/components/PostingForm/PostingForm.tsx"
+			],
+			[
+				"coll",
+				"src/components/Widget/Collapsed/Collapsed.tsx"
+			],
+			[
+				"inj",
+				"src/entries/inject.ts"
+			],
+			[
+				"butt",
+				"src/components/Button/Button.module.css"
+			],
+			[
+				"devts",
+				"src/entries/dev.tsx"
+			],
+			[
+				"avs",
+				"src/components/AvatarStack/AvatarStack.tsx"
+			],
+			[
+				"rel",
+				"src/components/OpinionFeed/components/Related/Related.tsx"
+			],
+			[
+				"av",
+				"src/components/AvatarStack/AvatarStack.module.css"
+			],
+			[
+				"tab",
+				"src/components/Tabs/Tab.module.css"
+			],
+			[
+				"data",
+				"src/pages/Graph/data.ts"
+			],
+			[
+				"dail",
+				"src/utils/queries/fetchLinksDailyTop.ts"
+			],
+			[
+				"rou",
+				"src/components/App/routes.tsx"
+			],
+			[
+				"twit",
+				"src/components/TwitterUser/TwitterUser.tsx"
+			],
+			[
+				"of",
+				"src/components/OpinionFeed/OpinionFeed.tsx"
+			],
+			[
+				"fee",
+				"src/pages/Feed/components/Feed/Feed.tsx"
+			],
+			[
+				"feed",
+				"src/pages/Feed/components/Feed/Feed.tsx"
+			],
+			[
+				"avatarst",
+				"src/components/AvatarStack/AvatarStack.tsx"
+			],
+			[
+				"head",
+				"src/components/OpinionRelated/components/Header/Header.tsx"
+			],
+			[
+				"or",
+				"src/components/OpinionRelated/OpinionRelated.tsx"
+			],
+			[
+				"soci",
+				"src/components/LinkPreviewFeed/components/SocialMenu/SocialMenu.tsx"
+			],
+			[
+				"manif",
+				"android/app/src/main/assets/public/manifest.json"
+			],
+			[
+				"spe",
+				"src/main/specs.cljs"
+			],
+			[
+				"const",
+				"src/utils/constants.ts"
+			],
+			[
+				"fn",
+				"src/utils/fn.ts"
+			],
+			[
+				"linktsx",
+				"src/components/Link/Link.tsx"
+			],
+			[
+				"ga",
+				"src/utils/ga.ts"
+			],
+			[
+				"socialme",
+				"src/components/LinkPreviewFeed/components/SocialMenu/SocialMenu.tsx"
+			],
+			[
+				"conte",
+				"src/pages/Permalink/components/Content/Content.tsx"
+			],
+			[
+				"globa",
+				"src/global.d.ts"
+			],
+			[
+				"popup",
+				"src/components/PopupHint/PopupHint.tsx"
+			],
+			[
+				"content",
+				"src/pages/Permalink/components/Content/Content.tsx"
+			],
+			[
+				"mutu",
+				"src/pages/Feed/components/Mutuals/Mutuals.tsx"
+			],
+			[
+				"top",
+				"src/pages/Feed/components/DailyTop/DailyTop.tsx"
+			],
+			[
+				"shad",
+				"shadow-cljs.edn"
+			],
+			[
+				"gamec",
+				"src/main/frontend/game_context.cljs"
+			],
+			[
+				"pla",
+				"src/main/common/player.cljs"
+			],
+			[
+				"game",
+				"src/main/common/game.cljs"
+			],
+			[
+				"ui",
+				"src/main/frontend/ui.cljs"
+			],
+			[
+				"pas",
+				"src/main/common/game/pass.cljs"
+			],
+			[
+				"deck",
+				"src/main/common/deck.cljs"
+			],
+			[
+				"spec",
+				"src/main/common/specs.cljs"
+			],
+			[
+				"tw",
+				"src/components/TwitterEntities/TwitterEntities.tsx"
+			],
+			[
+				"mas",
+				"src/components/MastodonPost/MastodonPost.tsx"
+			],
+			[
+				"play",
+				"src/main/common/player.cljs"
+			],
+			[
+				"utils",
+				"src/main/common/utils.cljs"
+			],
+			[
+				"gamepasclj",
+				"src/main/common/game/pass.cljs"
+			],
+			[
+				"frontmainclj",
+				"src/main/frontend/main.cljs"
+			],
+			[
+				"util",
+				"src/main/common/utils.cljs"
+			],
+			[
+				"feedl",
+				"src/pages/Feed/FeedLayout.tsx"
+			],
+			[
+				"anim",
+				"src/components/AnimatedOutlet/AnimatedOutlet.tsx"
+			],
+			[
+				"infli",
+				"src/components/InfiniteList/InfiniteList.tsx"
+			],
+			[
+				"enri",
+				"src/components/EnrichedLinkFeed/EnrichedLinkFeed.tsx"
+			],
+			[
+				"inf",
+				"src/components/InfiniteList/InfiniteList.tsx"
+			],
+			[
+				"ofm",
+				"src/components/OpinionFeed/OpinionFeed.module.css"
+			],
+			[
+				"models",
+				"src/types/models.ts"
+			],
+			[
+				"mode",
+				"src/types/models.ts"
+			],
+			[
+				"src/utils/queries/fetchFeed.ts",
+				"src/utils/queries/fetchFeed.ts"
+			],
+			[
+				"opfe",
+				"src/components/OpinionFeed/OpinionFeed.tsx"
+			],
+			[
+				"tweeten",
+				"src/components/TwitterEntities/TwitterEntities.tsx"
+			],
+			[
+				"fetchfee",
+				"src/utils/queries/fetchFeed.ts"
+			],
+			[
+				"fetchpos",
+				"src/utils/queries/fetchAccountPosts.ts"
+			],
+			[
+				"button",
+				"node_modules/tw-elements/dist/src/js/bs/dist/button.js"
+			],
+			[
+				"car",
+				"src/main/frontend/cardui.cljs"
+			],
+			[
+				"ty",
+				"src/types.nim"
+			],
+			[
+				"type",
+				"src/types.nim"
+			],
+			[
+				"rss",
+				"src/routes/rss.nim"
+			],
+			[
+				"compo",
+				"docker-compose.yml"
+			],
+			[
+				"do ",
+				"Dockerfile.arm64"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"cardu",
+				"src/main/frontend/cardui.cljs"
+			],
+			[
+				"html",
+				"public/index.html"
+			],
+			[
+				"subl",
+				"fool.sublime-project"
+			],
+			[
+				"tailw",
+				"tailwind.config.js"
+			],
+			[
+				"sub",
+				"fool.sublime-project"
+			],
+			[
+				"hmtl",
+				"public/index.html"
+			],
+			[
+				"android/app/src/main/java/org/fheroes2/MainActivity.java",
+				"android/app/src/main/java/org/fheroes2/MainActivity.java"
+			],
+			[
+				"perma",
+				"src/pages/Permalink/Permalink.module.css"
+			],
+			[
+				"model",
+				"src/types/models.ts"
+			],
+			[
+				"creata",
+				"src/pages/Feed/components/CreateTab/CreateTab.tsx"
+			],
+			[
+				"web",
+				"src/entries/web.tsx"
+			],
+			[
+				"routes",
+				"src/components/App/routes.tsx"
+			],
+			[
+				"tabmo",
+				"src/components/Tabs/Tab.module.css"
+			],
+			[
+				"cate",
+				"src/components/CategoriesList/CategoriesList.tsx"
+			],
+			[
+				"feedta",
+				"src/pages/Feed/components/FeedTab/FeedTab.tsx"
+			],
+			[
+				"tabm",
+				"src/components/Tabs/Tab.module.css"
+			],
+			[
+				"fedl",
+				"src/pages/Feed/FeedLayout.tsx"
+			],
+			[
+				"tabmod",
+				"src/components/Tabs/Tab.module.css"
+			],
+			[
+				"feedla",
+				"src/pages/Feed/FeedLayout.tsx"
+			],
+			[
+				"createta",
+				"src/pages/Feed/components/CreateTab/CreateTab.tsx"
+			],
+			[
+				"fet",
+				"src/pages/Feed/components/FeedTab/FeedTab.tsx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 305.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

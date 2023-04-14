@@ -35,7 +35,10 @@
                                             :to (:table-selected player-state)
                                             :by (:player-selected player-state)})}
           "Beat")
-       ($ ui/button {:size :xs} "Take"))))
+       ($ ui/button {:size :xs
+                     :on-click #(dispatch! {:type :take
+                                            :player player})}
+          "Take"))))
 
 (defui player [{:keys [player attacker? defender?]}]
   (let [[player-state set-player-state!] (uix.core/use-context player-state-context)]

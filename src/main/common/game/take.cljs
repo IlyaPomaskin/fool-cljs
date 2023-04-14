@@ -49,7 +49,7 @@
         player-index (p/get-player-index (:players game) player')]
     (if (nil? error)
       (-> game
-          (update-in [:players player-index] #(p/add-cards (flatten (:table game)) %))
+          (update-in [:players player-index] #(p/add-cards (filter some? (flatten (:table game))) %))
           (assoc :table [])
           (assoc :error nil))
       (assoc game :error error))))

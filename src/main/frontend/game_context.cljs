@@ -4,6 +4,7 @@
    [common.game.move :as gm]
    [common.game.pass :as gp]
    [common.game.beat :as gb]
+   [common.game.take :as gt]
    [clojure.pprint :refer [pprint]]
    [uix.core :refer [$ defui]]
    [uix.dom]
@@ -55,7 +56,7 @@
   (case type
     :move (gm/move (:card action) player game)
 
-    ; :take (g/take' player game)
+    :take (gt/take' player game)
 
     :pass (gp/pass player game)
 

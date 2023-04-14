@@ -5,8 +5,8 @@
    [clojure.spec.alpha :as s]
    [specs]))
 
-(defn defender? [player game]
-  (= (:defender game) (:id player)))
+(defn defender? [player' game]
+  (player/equals? (:defender game) player'))
 
 (s/fdef defender?
   :args (s/cat :player :specs/player :game :specs/game)
