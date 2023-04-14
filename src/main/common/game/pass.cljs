@@ -48,12 +48,3 @@
   :args (s/cat :player :specs/player
                :game :specs/game)
   :ret :specs/game)
-
-(comment
-  (pass
-   {:id 111}
-   {:pass [{:id 111}]})
-
-  (pass
-   {:id 222}
-   {:pass [{:id 111}]}))

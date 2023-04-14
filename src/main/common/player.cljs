@@ -17,6 +17,9 @@
 (defn remove-card [card player]
   (update player :cards #(deck/remove-card card %)))
 
+(defn add-cards [cards player]
+  (update player :cards #(concat % cards)))
+
 (defn mask-player [playerId player]
   (if (= playerId (:id player))
     player
