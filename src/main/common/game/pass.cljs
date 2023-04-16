@@ -3,7 +3,9 @@
    [common.player :as p]
    [common.utils :refer [find-item first-error]]
    [clojure.spec.alpha :as s]
-   [specs]))
+   [specs]
+   [common.game-utils :as game-utils]
+   [common.table :as table]))
 
 (defn pass-check [player' game']
   (first-error
@@ -28,11 +30,23 @@
   :args (s/cat :player :specs/player
                :pass-list :specs/pass))
 
+(defn next-turn [game]
+  (let [passed? (game-utils/all-passed? game)
+        beaten? (table/all-beaten? (:table game))]
+    (if (and passed? beaten?)
+      (let [next-attacker (:defender game)
+            next-defender (p/get-next-player next-attacker (:players game))]
+        (-> game
+            (assoc :attacker next-attacker)
+            (assoc :defender next-defender)))
+      game)))
+
 (defn pass-action [player game]
   (let [error (pass-check player game)]
     (if (nil? error)
       (-> game
           (assoc :pass (toggle-pass player (:pass game)))
+          next-turn
           (assoc :error nil))
       (assoc game :error error))))
 

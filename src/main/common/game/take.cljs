@@ -46,12 +46,17 @@
 
 (defn take-action [player' game]
   (let [error (take-check player' game)
-        player-index (p/get-player-index (:players game) player')]
+        player-index (p/get-player-index (:players game) player')
+        next-attacker (p/get-next-player (:defender game) (:players game))
+        next-defender (p/get-next-player next-attacker (:players game))]
     (if (nil? error)
       (-> game
           (update-in [:players player-index] #(p/add-cards (filter some? (flatten (:table game))) %))
           (assoc :table [])
-          (assoc :error nil))
+          (assoc :error nil)
+          (assoc :attacker next-attacker)
+          (assoc :defender next-defender))
+
       (assoc game :error error))))
 
 (s/fdef take-action

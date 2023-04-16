@@ -28,7 +28,10 @@
                                             :player player
                                             :card (:player-selected player-state)})}
           "Move")
-       ($ ui/button {:size :xs} "Pass")
+       ($ ui/button {:size :xs
+                     :on-click #(dispatch! {:type :pass
+                                            :player player})}
+          "Pass")
        ($ ui/button {:size :xs
                      :on-click #(dispatch! {:type :beat
                                             :player player
