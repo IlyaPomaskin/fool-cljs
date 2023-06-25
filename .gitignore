@@ -23,5 +23,6 @@ pom.xml.asc
 .lsp
 out
 
-fool.sublime-workspace
+*.sublime-workspace
 public/style.css
+

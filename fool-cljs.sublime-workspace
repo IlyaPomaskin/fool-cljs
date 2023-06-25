@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"bea",
+				"beaten?"
+			],
+			[
+				"pas",
+				"passed?"
+			],
+			[
+				"g",
+				"p/get-next-player"
+			],
+			[
+				"pla",
+				"player'"
+			],
+			[
+				"gam",
+				"game-context"
+			],
+			[
 				"update",
 				"update-in"
 			],
@@ -16,16 +36,8 @@
 				":table-selected"
 			],
 			[
-				"pla",
-				"player-state"
-			],
-			[
 				"cons",
 				"constantly"
-			],
-			[
-				"bea",
-				"beat-check"
 			],
 			[
 				"so",
@@ -356,10 +368,6 @@
 				":deffender?"
 			],
 			[
-				"g",
-				"player/get-next-player"
-			],
-			[
 				"at",
 				"attacker?"
 			],
@@ -500,20 +508,12 @@
 				"games-in-lobby-by-id"
 			],
 			[
-				"gam",
-				"games-in-lobby-by-id"
-			],
-			[
 				"game-",
 				"games-in-lobby-by-id"
 			],
 			[
 				"rand",
 				"rand-int"
-			],
-			[
-				"asso",
-				"assoc-in"
 			]
 		]
 	},
@@ -532,16 +532,20 @@
 		"selected_items":
 		[
 			[
+				"sublime",
+				"Clojure Sublimed: Connect to shadow-cljs"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
 				"shad",
 				"Clojure Sublimed: Connect to shadow-cljs"
 			],
 			[
 				"proje",
 				"Project: Save As"
-			],
-			[
-				"colo",
-				"UI: Select Color Scheme"
 			],
 			[
 				"custo",
@@ -1043,21 +1047,30 @@
 		"/Users/ipomaskin/work/fool-cljs",
 		"/Users/ipomaskin/work/fool-cljs/src",
 		"/Users/ipomaskin/work/fool-cljs/src/main",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game",
 		"/Users/ipomaskin/work/fool-cljs/src/main/frontend"
 	],
 	"file_history":
 	[
-		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/game_context.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/deck.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/cardui.cljs",
 		"/Users/ipomaskin/work/fool-cljs/src/main/common/card.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/player.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/specs.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/table.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game/take.cljs",
 		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/main.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game/pass.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/game_context.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/game_utils.cljs",
+		"/Users/ipomaskin/work/fool-cljs/src/main/common/utils.cljs",
 		"/Users/ipomaskin/work/fool-cljs/src/main/common/game/move.cljs",
 		"/Users/ipomaskin/work/fool-cljs/src/main/common/game/beat.cljs",
 		"/Users/ipomaskin/work/fool-cljs/fool-cljs.sublime-project",
 		"/Users/ipomaskin/work/fool-cljs/src/main/main.cljs",
 		"/Users/ipomaskin/work/fool-cljs/src/main/common/game.cljs",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/table.cljs",
 		"/Users/ipomaskin/work/fool-cljs/fool.sublime-project",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/utils.cljs",
 		"/Users/ipomaskin/work/opinions/src/components/Link/Link.tsx",
 		"/Users/ipomaskin/work/opinions/src/components/Link/useExtLinkHandler.ts",
 		"/Users/ipomaskin/work/opinions/src/entries/ext.tsx",
@@ -1136,7 +1149,6 @@
 		"/Users/ipomaskin/work/opinions/manifest_templates/chromeV3.json",
 		"/Users/ipomaskin/work/opinions/manifest_templates/firefoxV2.json",
 		"/Users/ipomaskin/work/opinions/manifest_templates/pwa.json",
-		"/Users/ipomaskin/work/fool-cljs/src/main/specs.cljs",
 		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/OpinionFeed.module.css",
 		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/components/useAnimationState.ts",
 		"/Users/ipomaskin/work/opinions/src/components/AnimateHeight/AnimateHeight.tsx",
@@ -1156,11 +1168,7 @@
 		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/Mutuals/useMutualsRequest.ts",
 		"/Users/ipomaskin/work/opinions/src/pages/Feed/components/Mutuals/Mutuals.tsx",
 		"/Users/ipomaskin/work/fool-cljs/shadow-cljs.edn",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/player.cljs",
 		"/Users/ipomaskin/work/fool-cljs/src/main/frontend/ui.cljs",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/game/pass.cljs",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/game_utils.cljs",
-		"/Users/ipomaskin/work/fool-cljs/src/main/common/deck.cljs",
 		"/Users/ipomaskin/work/fool-cljs/src/main/common/specs.cljs",
 		"/Users/ipomaskin/work/opinions/src/components/TwitterEntities/TwitterEntities.tsx",
 		"/Users/ipomaskin/work/opinions/src/components/MastodonPost/MastodonPost.tsx",
@@ -1172,9 +1180,7 @@
 		"/Users/ipomaskin/work/opinions/src/components/OpinionFeed/models.ts",
 		"/Users/ipomaskin/work/opinions/src/components/OpinionRelated/hooks.ts",
 		"/Users/ipomaskin/work/opinions/src/types/models.ts",
-		"/Users/ipomaskin/work/opinions/src/utils/queries/fetchFeed.ts",
-		"/Users/ipomaskin/work/opinions/src/components/MastodonPost/MastodonPost.module.css",
-		"/Users/ipomaskin/work/opinions/node_modules/html-react-parser/index.d.ts"
+		"/Users/ipomaskin/work/opinions/src/utils/queries/fetchFeed.ts"
 	],
 	"find":
 	{
@@ -1182,9 +1188,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 98.0,
+		"height": 101.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -1192,6 +1199,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"slate",
+			"bg-sk",
+			"500",
+			"slate",
+			":id",
+			"specs/id",
+			":specs/id",
+			"::id",
 			"(s/cat :player :specs/player\n               :game :specs/game\n               :to :specs/card\n               :by :specs/card)",
 			"pass",
 			"move-action",
@@ -1315,16 +1330,44 @@
 		"selected_items":
 		[
 			[
+				"pla",
+				"src/main/common/player.cljs"
+			],
+			[
+				"spec",
+				"src/main/specs.cljs"
+			],
+			[
+				"take",
+				"src/main/common/game/take.cljs"
+			],
+			[
+				"table",
+				"src/main/common/table.cljs"
+			],
+			[
+				"ut",
+				"src/main/common/utils.cljs"
+			],
+			[
+				"cont",
+				"src/main/frontend/game_context.cljs"
+			],
+			[
+				"gamecon",
+				"src/main/frontend/game_context.cljs"
+			],
+			[
+				"main",
+				"src/main/frontend/main.cljs"
+			],
+			[
 				"fool",
 				"fool-cljs.sublime-project"
 			],
 			[
 				"move",
 				"src/main/common/game/move.cljs"
-			],
-			[
-				"main",
-				"src/main/frontend/main.cljs"
 			],
 			[
 				"card",
@@ -1345,10 +1388,6 @@
 			[
 				"gam",
 				"src/main/common/game.cljs"
-			],
-			[
-				"gamecon",
-				"src/main/frontend/game_context.cljs"
 			],
 			[
 				"front",
@@ -1607,10 +1646,6 @@
 				"src/main/frontend/game_context.cljs"
 			],
 			[
-				"pla",
-				"src/main/common/player.cljs"
-			],
-			[
 				"game",
 				"src/main/common/game.cljs"
 			],
@@ -1625,10 +1660,6 @@
 			[
 				"deck",
 				"src/main/common/deck.cljs"
-			],
-			[
-				"spec",
-				"src/main/common/specs.cljs"
 			],
 			[
 				"tw",
@@ -1809,34 +1840,22 @@
 			[
 				"fedl",
 				"src/pages/Feed/FeedLayout.tsx"
-			],
-			[
-				"tabmod",
-				"src/components/Tabs/Tab.module.css"
-			],
-			[
-				"feedla",
-				"src/pages/Feed/FeedLayout.tsx"
-			],
-			[
-				"createta",
-				"src/pages/Feed/components/CreateTab/CreateTab.tsx"
-			],
-			[
-				"fet",
-				"src/pages/Feed/components/FeedTab/FeedTab.tsx"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 0.0,
-		"last_filter": "",
+		"height": 500.0,
+		"last_filter": "op",
 		"selected_items":
 		[
+			[
+				"op",
+				"~/work/opinions/opinions.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
@@ -1854,7 +1873,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 209.0,
 	"status_bar_visible": true,
 	"template_settings":
