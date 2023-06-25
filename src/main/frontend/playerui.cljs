@@ -45,13 +45,11 @@
 (defui player [{:keys [player attacker? defender?]}]
   (let [[player-state set-player-state!] (uix.core/use-context player-state-context)]
     ($ ui/panel
-       ($ ui/title (:id player))
-
-       (when attacker?
-         ($ :div "attack"))
-
-       (when defender?
-         ($ :div "defend"))
+       ($ ui/title
+          ($ :div.disp
+             [(:id player)
+              (when attacker? ($ :span.text-xs "\u00A0attack"))
+              (when defender? ($ :span.text-xs "\u00A0defend"))]))
 
        ($ :.flex.flex-row.flex-wrap.gap-2
           (map
