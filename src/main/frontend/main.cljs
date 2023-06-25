@@ -4,10 +4,11 @@
    [common.card :as c]
    [common.player :as p]
    [frontend.cardui :as card-ui]
+   [frontend.game-context :as game-context]
+   [frontend.stackui :as stack-ui]
    [frontend.ui :as ui]
    [uix.core :refer [$ defui]]
-   [uix.dom]
-   [frontend.game-context :as game-context]))
+   [uix.dom]))
 
 (def player-state-context (uix.core/create-context []))
 (defui player-state-provider [{:keys [children]}]
@@ -96,31 +97,12 @@
                   ($ card-ui/visible {:card by}))))
            table)))))
 
-(defui stack [{:keys [deck trump]}]
-  (let [length (dec (count deck))
-        has-cards? (> length 0)
-        last-card (last deck)]
-    ($ :.relative.w-24
-       (if (or has-cards? last-card)
-         ($ card-ui/slot {:class "relative z-10"})
-         ($ card-ui/trump {:trump trump}))
-
-       (when has-cards?
-         ($ card-ui/stack
-            {:class "absolute top-0 z-10"
-             :amount length}))
-
-       (when last-card
-         ($ card-ui/visible
-            {:class "absolute top-0 rotate-90 left-8"
-             :card last-card})))))
-
 (defui game [{:keys [game]}]
   ($ :.flex.flex-col.gap-8
      ($ :.flex.gap-8
         ($ ui/panel
            ($ ui/title "Deck")
-           ($ stack game))
+           ($ stack-ui/stack game))
 
         ($ table
            {:class "flex-1"
